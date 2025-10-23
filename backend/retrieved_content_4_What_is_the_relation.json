@@ -1,0 +1,92 @@
+{
+  "query": "What is the relationship between Dubai government and Emirates?",
+  "basic_search": [
+    {
+      "name": "Emirates Airlines",
+      "type": "Organization",
+      "confidence": 0.8
+    },
+    {
+      "name": "Dubai government",
+      "type": "Organization",
+      "confidence": 0.8
+    },
+    {
+      "name": "Dubai government",
+      "type": "Organization",
+      "confidence": 0.8
+    }
+  ],
+  "center_searches": [
+    {
+      "name": "Airbus A300B4",
+      "type": "Aircraft Model",
+      "relation": "vehicle used in operations",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Dubai government",
+      "type": "Organization",
+      "relation": "founder",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Sheikh Ahmed bin Saeed Al Maktoum",
+      "type": "Person",
+      "relation": "leader",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Boeing 737-300",
+      "type": "Aircraft Model",
+      "relation": "vehicle used in operations",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Emirates Airlines",
+      "type": "Organization",
+      "relation": "founder",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    }
+  ],
+  "multi_hop_searches": [
+    {
+      "entity_names": [
+        "Dubai government",
+        "Emirates Airlines"
+      ],
+      "relations": [
+        "founder"
+      ],
+      "path_confidence": 0.7,
+      "hop_count": 1,
+      "source_docs": [
+        "emirates_airlines_research.md"
+      ]
+    }
+  ],
+  "relationship_searches": [],
+  "entity_contexts": [
+    {
+      "name": "Emirates Airlines",
+      "type": "Organization",
+      "confidence": 0.8,
+      "outgoing_relationships": [],
+      "incoming_relationships": [],
+      "mentioned_in_documents": []
+    },
+    {
+      "name": "Dubai government",
+      "type": "Organization",
+      "confidence": 0.8,
+      "outgoing_relationships": [],
+      "incoming_relationships": [],
+      "mentioned_in_documents": []
+    }
+  ]
+}

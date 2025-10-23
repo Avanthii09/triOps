@@ -1,0 +1,144 @@
+{
+  "query": "What aircraft does Indigo Airlines operate?",
+  "basic_search": [
+    {
+      "name": "Indigo Airlines",
+      "type": "Organization",
+      "confidence": 0.8
+    },
+    {
+      "name": "Emirates Airlines",
+      "type": "Organization",
+      "confidence": 0.8
+    },
+    {
+      "name": "Indigo Airlines",
+      "type": "Organization",
+      "confidence": 0.8
+    },
+    {
+      "name": "Emirates Airlines",
+      "type": "Organization",
+      "confidence": 0.8
+    },
+    {
+      "name": "Indigo Airlines",
+      "type": "Organization",
+      "confidence": 0.8
+    }
+  ],
+  "center_searches": [
+    {
+      "name": "InterGlobe Aviation Limited",
+      "type": "Organization",
+      "relation": "owned_by",
+      "confidence": 0.7,
+      "source_doc": "indigo_airlines_research.md"
+    },
+    {
+      "name": "Rahul Bhatia",
+      "type": "Person",
+      "relation": "founding_director",
+      "confidence": 0.7,
+      "source_doc": "indigo_airlines_research.md"
+    },
+    {
+      "name": "Rakesh Gangwal",
+      "type": "Person",
+      "relation": "co_founding_director",
+      "confidence": 0.7,
+      "source_doc": "indigo_airlines_research.md"
+    },
+    {
+      "name": "InterGlobe Aviation Limited",
+      "type": "Organization",
+      "relation": "owned_by",
+      "confidence": 0.7,
+      "source_doc": "indigo_airlines_research.md"
+    },
+    {
+      "name": "Dubai government",
+      "type": "Organization",
+      "relation": "founder",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Sheikh Ahmed bin Saeed Al Maktoum",
+      "type": "Person",
+      "relation": "leader",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Boeing 737-300",
+      "type": "Aircraft Model",
+      "relation": "vehicle used in operations",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    },
+    {
+      "name": "Rahul Bhatia",
+      "type": "Person",
+      "relation": "founding_director",
+      "confidence": 0.7,
+      "source_doc": "indigo_airlines_research.md"
+    },
+    {
+      "name": "Airbus A300B4",
+      "type": "Aircraft Model",
+      "relation": "vehicle used in operations",
+      "confidence": 0.7,
+      "source_doc": "emirates_airlines_research.md"
+    }
+  ],
+  "multi_hop_searches": [
+    {
+      "entity_names": [
+        "Indigo Airlines",
+        "InterGlobe Aviation Limited"
+      ],
+      "relations": [
+        "owned_by"
+      ],
+      "path_confidence": 0.7,
+      "hop_count": 1,
+      "source_docs": [
+        "indigo_airlines_research.md"
+      ]
+    },
+    {
+      "entity_names": [
+        "Indigo Airlines",
+        "InterGlobe Aviation Limited"
+      ],
+      "relations": [
+        "owned_by"
+      ],
+      "path_confidence": 0.7,
+      "hop_count": 1,
+      "source_docs": [
+        "indigo_airlines_research.md"
+      ]
+    }
+  ],
+  "relationship_searches": [],
+  "entity_contexts": [
+    {
+      "name": "Indigo Airlines",
+      "type": "Organization",
+      "confidence": 0.8,
+      "outgoing_relationships": [],
+      "incoming_relationships": [],
+      "mentioned_in_documents": []
+    },
+    {
+      "name": "Emirates Airlines",
+      "type": "Organization",
+      "confidence": 0.8,
+      "outgoing_relationships": [],
+      "incoming_relationships": [],
+      "mentioned_in_documents": []
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "emirates_airlines_research.md": {
+    "entities": [
+      {
+        "name": "Sheikh Ahmed bin Saeed Al Maktoum",
+        "type": "Person"
+      },
+      {
+        "name": "Dubai government",
+        "type": "Organization"
+      },
+      {
+        "name": "Emirates Airlines",
+        "type": "Organization"
+      },
+      {
+        "name": "Boeing 737-300",
+        "type": "Aircraft Model"
+      },
+      {
+        "name": "Airbus A300B4",
+        "type": "Aircraft Model"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Sheikh Ahmed bin Saeed Al Maktoum",
+        "target": "Emirates Airlines",
+        "relation": "leader"
+      },
+      {
+        "source": "Dubai government",
+        "target": "Emirates Airlines",
+        "relation": "founder"
+      },
+      {
+        "source": "Boeing 737-300",
+        "target": "Emirates Airlines",
+        "relation": "vehicle used in operations"
+      },
+      {
+        "source": "Airbus A300B4",
+        "target": "Emirates Airlines",
+        "relation": "vehicle used in operations"
+      }
+    ]
+  },
+  "indigo_airlines_research.md": {
+    "entities": [
+      {
+        "name": "Indigo Airlines",
+        "type": "Organization"
+      },
+      {
+        "name": "InterGlobe Aviation Limited",
+        "type": "Organization"
+      },
+      {
+        "name": "Rahul Bhatia",
+        "type": "Person"
+      },
+      {
+        "name": "Rakesh Gangwal",
+        "type": "Person"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Indigo Airlines",
+        "target": "InterGlobe Aviation Limited",
+        "relation": "owned_by"
+      },
+      {
+        "source": "Rahul Bhatia",
+        "target": "Indigo Airlines",
+        "relation": "founding_director"
+      },
+      {
+        "source": "Rakesh Gangwal",
+        "target": "Indigo Airlines",
+        "relation": "co_founding_director"
+      }
+    ]
+  }
+}

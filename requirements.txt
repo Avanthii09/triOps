@@ -1,0 +1,289 @@
+# =============================================================================
+# Triops Airline Management System - Complete Requirements
+# =============================================================================
+# This file contains all dependencies for the complete system including:
+# - Backend (FastAPI + PostgreSQL)
+# - Frontend (React.js)
+# - Development tools
+# - Testing frameworks
+# - Production dependencies
+# =============================================================================
+
+# =============================================================================
+# CORE BACKEND DEPENDENCIES
+# =============================================================================
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+alembic==1.12.1
+
+# Environment & Configuration
+python-dotenv==1.0.0
+
+# Data Validation & Serialization
+pydantic[email]==2.5.0
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# HTTP Client
+httpx==0.25.2
+
+# =============================================================================
+# TESTING DEPENDENCIES
+# =============================================================================
+
+# Testing Framework
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Test Database
+pytest-postgresql==5.0.0
+
+# HTTP Testing
+httpx==0.25.2
+requests==2.31.0
+
+# =============================================================================
+# DEVELOPMENT DEPENDENCIES
+# =============================================================================
+
+# Code Quality
+black==23.11.0
+flake8==6.1.0
+isort==5.12.0
+mypy==1.7.1
+
+# Documentation
+mkdocs==1.5.3
+mkdocs-material==9.4.8
+
+# Development Server
+watchfiles==0.21.0
+
+# =============================================================================
+# PRODUCTION DEPENDENCIES
+# =============================================================================
+
+# Production WSGI Server
+gunicorn==21.2.0
+
+# Process Management
+supervisor==4.2.5
+
+# Monitoring & Logging
+structlog==23.2.0
+sentry-sdk[fastapi]==1.38.0
+
+# =============================================================================
+# OPTIONAL DEPENDENCIES (Currently Unused)
+# =============================================================================
+
+# gRPC Dependencies (Optional - for future microservices)
+grpcio>=1.60.0
+grpcio-tools>=1.60.0
+grpcio-status>=1.60.0
+
+# RAG/ML Dependencies (Optional - for future AI features)
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-pinecone>=0.0.1
+langchain-google-genai>=0.0.6
+pinecone-client>=2.2.4
+numpy>=1.24.0
+pdfplumber>=0.10.0
+
+# Additional ML/AI Libraries (Optional)
+openai>=1.3.0
+transformers>=4.35.0
+torch>=2.1.0
+scikit-learn>=1.3.0
+
+# =============================================================================
+# SYSTEM DEPENDENCIES
+# =============================================================================
+
+# System Utilities
+click==8.1.7
+rich==13.7.0
+typer==0.9.0
+
+# Date/Time Handling
+python-dateutil==2.8.2
+pytz==2023.3
+
+# File Handling
+pathlib2==2.3.7.post1
+
+# =============================================================================
+# FRONTEND DEPENDENCIES (Node.js - Install separately)
+# =============================================================================
+# Note: Frontend dependencies are managed via package.json
+# Run: cd frontend && npm install
+#
+# Core Dependencies:
+# - react==19.2.0
+# - react-dom==19.2.0
+# - react-router-dom==7.9.4
+# - styled-components==6.1.19
+# - axios==1.12.2
+# - react-hot-toast==2.6.0
+#
+# Development Dependencies:
+# - react-scripts==5.0.1
+# - @testing-library/react==16.3.0
+# - @testing-library/jest-dom==6.9.1
+# - @testing-library/user-event==13.5.0
+# - web-vitals==2.1.4
+
+# =============================================================================
+# DATABASE DEPENDENCIES
+# =============================================================================
+
+# PostgreSQL Extensions
+psycopg2-binary==2.9.9
+
+# Database Migrations
+alembic==1.12.1
+
+# Connection Pooling
+sqlalchemy-pool==1.0.0
+
+# =============================================================================
+# SECURITY DEPENDENCIES
+# =============================================================================
+
+# Password Hashing
+bcrypt==4.1.2
+passlib[bcrypt]==1.7.4
+
+# JWT Tokens
+python-jose[cryptography]==3.3.0
+PyJWT==2.8.0
+
+# CORS
+fastapi-cors==0.0.6
+
+# Rate Limiting (Optional)
+slowapi==0.1.9
+
+# =============================================================================
+# MONITORING & OBSERVABILITY
+# =============================================================================
+
+# Application Performance Monitoring
+sentry-sdk[fastapi]==1.38.0
+
+# Structured Logging
+structlog==23.2.0
+
+# Health Checks
+fastapi-health==0.1.0
+
+# Metrics Collection
+prometheus-client==0.19.0
+
+# =============================================================================
+# API DOCUMENTATION
+# =============================================================================
+
+# OpenAPI/Swagger (Built into FastAPI)
+# Additional documentation tools
+mkdocs==1.5.3
+mkdocs-material==9.4.8
+
+# =============================================================================
+# DEPLOYMENT DEPENDENCIES
+# =============================================================================
+
+# Container Support
+docker==6.1.3
+
+# Environment Management
+python-dotenv==1.0.0
+
+# Configuration Management
+pydantic-settings==2.1.0
+
+# =============================================================================
+# UTILITY DEPENDENCIES
+# =============================================================================
+
+# Async Support
+asyncio==3.4.3
+aiofiles==23.2.1
+
+# Data Processing
+pandas==2.1.4
+numpy==1.24.4
+
+# JSON Handling
+orjson==3.9.10
+
+# Caching (Optional)
+redis==5.0.1
+
+# =============================================================================
+# INSTALLATION INSTRUCTIONS
+# =============================================================================
+#
+# 1. Create virtual environment:
+#    python -m venv venv
+#    source venv/bin/activate  # On Windows: venv\Scripts\activate
+#
+# 2. Install Python dependencies:
+#    pip install -r requirements.txt
+#
+# 3. Install Node.js dependencies:
+#    cd frontend && npm install
+#
+# 4. Set up environment variables:
+#    cp .env.example .env
+#    # Edit .env with your configuration
+#
+# 5. Set up database:
+#    # Install PostgreSQL
+#    # Create database: triops_airline
+#    # Run migrations: alembic upgrade head
+#
+# 6. Start development servers:
+#    # Terminal 1: Backend
+#    cd backend && python main_complete.py
+#    
+#    # Terminal 2: Frontend
+#    cd frontend && npm start
+#
+# 7. Or use concurrent setup:
+#    npm run dev
+#
+# =============================================================================
+# VERSION COMPATIBILITY
+# =============================================================================
+#
+# Python: >= 3.9
+# Node.js: >= 16.0.0
+# PostgreSQL: >= 12.0
+# npm: >= 8.0.0
+#
+# =============================================================================
+# PRODUCTION DEPLOYMENT
+# =============================================================================
+#
+# For production deployment, install additional dependencies:
+# pip install gunicorn supervisor
+#
+# Use production WSGI server:
+# gunicorn main_complete:app -w 4 -k uvicorn.workers.UvicornWorker
+#
+# =============================================================================
+
+
